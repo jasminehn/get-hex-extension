@@ -30,9 +30,9 @@
         <h1>Color Picker</h1>
         <input type="text" id="colorCode" readonly>
         <script>
-        chrome.runtime.sendMessage({type: "getColor"}, function(response) {
-            document.getElementById("colorCode").value = response.hex;
-        });
-        </script>
+            chrome.runtime.sendMessage({type: "getColor"}, function(response) {
+                document.getElementById("colorCode").value = response.hex;
+            });
+            </script>
     </body>
 </html>
